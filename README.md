@@ -29,33 +29,38 @@
 ## Project setup
 
 ```bash
-$ npm install
+$ Dùng npm i --legacy-peer-deps để install
 ```
 
-## Compile and run the project
+## Tài khoản đăng nhập 
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+#  "email": "admin@gmail.com",
+	 "password": "Pass123@"
+# Mật khẩu mặc định cho mọi tài khoản sẽ là Pass123@
 ```
 
-## Run tests
+## File ENV
 
 ```bash
-# unit tests
-$ npm run test
+# Env cho BE
+MONGODB_URI=mongodb+srv://anphuchoa2912:Ks3A7l30aSnl2CS0@skincare.gvofc.mongodb.net/?retryWrites=true&w=majority&appName=skincare
+PORT=8000
+JWT_ACCESS_TOKEN_SECRET=59abe2087091ed4c19d22dfaa5430b2215a0cdc8
+JWT_ACCESS_TOKEN_EXPIRES_IN=15m
+JWT_REFRESH_TOKEN_SECRET=8df67720ccd3bf4a380f015ccf7aa52bda823396adf025e18ae195300fbd418c
+JWT_REFRESH_TOKEN_EXPIRES_IN=7d
+VNP_TMNCODE=ZULLDML0
+VNP_HASHSECRET=KRFCCINWN4GCPFUXASKVOVPBYJT3HZB7
+VNP_URL=https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+VNP_RETURN_URL=http://localhost:8000/payments/vnpay-return
+VNP_API_URL=https://sandbox.vnpayment.vn/merchant_webapi/api/transaction
+FRONTEND_URL=http://localhost:5173
 
-# e2e tests
-$ npm run test:e2e
+# Env cho FE
+VITE_API_URL=http://localhost:8000/api/v1
 
-# test coverage
-$ npm run test:cov
+
 ```
 
 ## Deployment
@@ -80,20 +85,4 @@ Check out a few resources that may come in handy when working with NestJS:
 - To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
 - Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
 - Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+- Need help with your project (part-time to full-time)?
